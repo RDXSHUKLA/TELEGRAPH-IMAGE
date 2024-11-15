@@ -1,0 +1,49 @@
+{
+  "name": "Telegraph-Image",
+  "description": "A bot to Upload Telegram Images to telegraph",
+  "repository": "https://github.com/RDXSHUKLA/TELEGRAPH-IMAGE",
+  "logo": "https://files.catbox.moe/whs1kd.jpg",
+  "keywords": [
+    "telegram",
+    "telegraph",
+    "imageuploader",
+    "telegram bot"
+  ],
+  "env": {
+    "BOT_TOKEN": {
+      "description": "Your Bot token from @Botfather",
+      "required": true,
+      "value": ""
+    },
+    "API_ID": {
+      "description": "Your API_ID from https://my.telegram.org/apps",
+      "required": true,
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "Your API_HASH from https://my.telegram.org/apps",
+      "required": true,
+      "value": ""
+    },
+    "BOT_OWNER": {
+      "description": "Bot owner ID",
+      "required": true,
+      "value": ""
+    },
+    "DATABASE_URL": {
+      "description": "MongoDB URL",
+      "required": true,
+      "value": ""
+    },
+    "UPDATE_CHANNEL": {
+      "description": "ID of channel. Without subscribing this channel users cannot use bot.",
+      "required": true,
+      "value": ""
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
